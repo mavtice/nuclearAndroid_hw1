@@ -1,10 +1,10 @@
 package com.example.nucleadandroid_hw2
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class ActivityB : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +12,11 @@ class ActivityB : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_b)
 
+        val buttonToActivityC = findViewById<Button>(R.id.button_to_activity_C)
+
+        buttonToActivityC.setOnClickListener {
+            val intent = Intent(this, ActivityC::class.java)
+            startActivity(intent)
+        }
     }
 }
