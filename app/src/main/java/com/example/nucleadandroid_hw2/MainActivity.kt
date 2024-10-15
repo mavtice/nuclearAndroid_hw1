@@ -1,8 +1,6 @@
 package com.example.nucleadandroid_hw2
 
 import android.content.Intent
-import android.content.Intent.FLAG_ACTIVITY_MULTIPLE_TASK
-import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -18,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonToActivityB.setOnClickListener {
             val intent = Intent(this, ActivityB::class.java)
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_MULTIPLE_TASK)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
 
@@ -28,5 +26,9 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
     }
 }

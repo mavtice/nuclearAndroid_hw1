@@ -5,4 +5,6 @@
     <string name="go_to_fragment_b">Перейти к Fragment B</string>
     <string name="activity_b">Activity B</string>
     <string name="go_to_activity_c">Перейти к Activity C</string>
+    <string name="activity_c">Activity C</string>
+    <string name="go_to_activity_a">Перейти к Activity A</string>
 </resources>
