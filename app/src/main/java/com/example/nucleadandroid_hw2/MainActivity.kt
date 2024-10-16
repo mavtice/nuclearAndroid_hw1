@@ -33,13 +33,12 @@ class MainActivity : AppCompatActivity() {
                 val fragmentContainer = findViewById<FrameLayout>(R.id.fragment_container)
                 fragmentContainer.visibility = View.VISIBLE
 
-                // Загрузка FragmentBA в контейнер
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container, FragmentBA())
                     .addToBackStack(null)
                     .commit()
             } else {
-                // В альбомной ориентации - оба фрагмента одновременно
+
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_container_a, FragmentBA())
                     .replace(R.id.fragment_container_b, FragmentBB())

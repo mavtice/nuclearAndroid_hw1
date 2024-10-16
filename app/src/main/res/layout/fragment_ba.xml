@@ -13,7 +13,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="150dp"
         android:textSize="32sp"
-        android:text="@string/fragmentba" />
+        android:text="@string/fragment_ba" />
 
     <Button
         android:id="@+id/button_to_fragment_BB"

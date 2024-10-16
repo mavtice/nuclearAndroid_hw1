@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="150sp"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:text="@string/fragment_bb" />
 
     <Button

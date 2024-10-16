@@ -1,5 +1,6 @@
 package com.example.nucleadandroid_hw2
 
+import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -17,13 +18,15 @@ class FragmentBB : Fragment(R.layout.fragment_bb) {
             val rnd = Random()
             val randomColor = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256))
 
-            //val randomColor = (0xFFFFDE21).toInt()
-            // Отправляем цвет через FragmentResult
+
             val result = Bundle()
             result.putInt("color", randomColor)
             parentFragmentManager.setFragmentResult("requestColor", result)
 
-            parentFragmentManager.popBackStack()
+            if (resources.configuration.orientation != Configuration.ORIENTATION_LANDSCAPE) {
+                parentFragmentManager.popBackStack()
+            }
+
         }
     }
 }
