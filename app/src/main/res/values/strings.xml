@@ -7,4 +7,10 @@
     <string name="go_to_activity_c">Перейти к Activity C</string>
     <string name="activity_c">Activity C</string>
     <string name="go_to_activity_a">Перейти к Activity A</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_fragment_bb">Перейти к FragmentBB</string>
+    <string name="fragment_bb">Fragment BB</string>
+    <string name="fragmentba">FragmentBA</string>
+    <string name="send_color">Отправить цвет</string>
 </resources>
