@@ -22,7 +22,7 @@
         <activity
             android:name=".ActivityB"
             android:exported="false"
-            android:taskAffinity="" />
+            android:taskAffinity=""/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

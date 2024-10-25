@@ -15,7 +15,7 @@ class FragmentBA : Fragment(R.layout.fragment_ba) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        backgroundColor = savedInstanceState?.getInt(BACKGROUND_COLOR)
+        savedInstanceState?.getString(BACKGROUND_COLOR)?.toInt()?.let { backgroundColor = it }
         backgroundColor?.let { view.setBackgroundColor(it) }
 
 
@@ -29,7 +29,7 @@ class FragmentBA : Fragment(R.layout.fragment_ba) {
 
         buttonToFragmentBB.setOnClickListener {
             parentFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, FragmentBB())
+                .replace(R.id.fragmentContainerView, FragmentBB())
                 .addToBackStack(null)
                 .commit()
         }
@@ -44,7 +44,7 @@ class FragmentBA : Fragment(R.layout.fragment_ba) {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        backgroundColor?.let {outState.putInt(BACKGROUND_COLOR, it)}
+        backgroundColor?.let {outState.putString(BACKGROUND_COLOR, it.toString())}
     }
 }
 
