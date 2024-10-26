@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">nuclearAndroid_hw2</string>
+    <string name="activity_a">Activity A</string>
+    <string name="go_to_activity_b">Перейти к Activity B</string>
+    <string name="go_to_fragment_b">Перейти к Fragment B</string>
+    <string name="activity_b">Activity B</string>
+    <string name="go_to_activity_c">Перейти к Activity C</string>
+    <string name="activity_c">Activity C</string>
+    <string name="go_to_activity_a">Перейти к Activity A</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="go_to_fragment_bb">Перейти к FragmentBB</string>
+    <string name="fragment_bb">FragmentBB</string>
+    <string name="fragment_ba">FragmentBA</string>
+    <string name="send_color">Отправить цвет</string>
+</resources>
