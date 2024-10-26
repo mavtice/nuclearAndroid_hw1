@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">nucleadAndroid_hw2</string>
+    <string name="app_name">nuclearAndroid_hw2</string>
     <string name="activity_a">Activity A</string>
     <string name="go_to_activity_b">Перейти к Activity B</string>
     <string name="go_to_fragment_b">Перейти к Fragment B</string>
