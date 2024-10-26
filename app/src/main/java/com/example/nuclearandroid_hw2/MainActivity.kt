@@ -1,4 +1,4 @@
-package com.example.nucleadandroid_hw2
+package com.example.nuclearandroid_hw2
 
 import android.content.Intent
 import android.os.Bundle

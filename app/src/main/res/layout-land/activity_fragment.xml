@@ -7,14 +7,14 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView"
-            android:name="com.example.nucleadandroid_hw2.FragmentBA"
+            android:name="com.example.nuclearandroid_hw2.FragmentBA"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/fragmentContainerView1"
-            android:name="com.example.nucleadandroid_hw2.FragmentBB"
+            android:name="com.example.nuclearandroid_hw2.FragmentBB"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"/>

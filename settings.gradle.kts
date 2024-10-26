@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "nucleadAndroid_hw2"
+rootProject.name = "nuclearAndroid_hw2"
 include(":app")
  

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nucleadandroid_hw2"
+    namespace = "com.example.nuclearandroid_hw2"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.nucleadandroid_hw2"
+        applicationId = "com.example.nuclearandroid_hw2"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
